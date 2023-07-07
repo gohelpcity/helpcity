@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+h1{
+    padding-left: 1.5rem;
+}
+.McButton-container {
+	position: relative;
+    padding-right: 1.5rem;
+}
+
+.McButton {
+	position: absolute;
+	top: 32%;
+    right: 100%;
+	width: 44px;
+	height: 33px;
+	cursor: pointer;
+}
+
+.McButton b {
+	position: absolute;
+	left: 0;
+	width: 44px;
+	height: 3px;
+	background-color: white;
+}
+
+.McButton b:nth-child(1) {
+	top: 0;
+}
+
+.McButton b:nth-child(2) {
+	top: 50%;
+}
+
+.McButton b:nth-child(3) {
+	top: 100%;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	justify-content: space-between;
+}
