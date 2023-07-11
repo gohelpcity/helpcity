@@ -15,7 +15,17 @@ const Nav = () => {
 		const McBar1 = document.querySelector(".bar1");
 		const McBar3 = document.querySelector(".bar3");
 		const menu = document.querySelector(".menu");
-		const nav = document.querySelector(".nav-bar");
+		const navBar = document.querySelector(".nav-bar");
+		const nav = document.querySelector(".nav");
+		const logo = document.querySelector(".logo");
+		const allPages = ["home", "about", "contact", "openings", "store", "faq"];
+		let currPage;
+		for (let i = 0; i < allPages.length; i++) {
+			if (document.querySelector(`.${allPages[i]}`) !== null) {
+				currPage = document.querySelector(`.${allPages[i]}`);
+				break;
+			}
+		}
 
 		McButton.classList.toggle("active");
 
@@ -34,6 +44,9 @@ const Nav = () => {
 				{ transform: ["rotateZ(135deg)", "rotateZ(0deg)"] },
 				{ duration: 300, delay: 150, easing: [100, 20] }
 			);
+			currPage.style.display = "none";
+			logo.style.color = "#282c34";
+
 		} else {
 			McButton.velocity(
 				{ transform: ["rotateZ(0deg)", "rotateZ(135deg)"] },
@@ -47,21 +60,27 @@ const Nav = () => {
 				{ top: "0%" },
 				{ duration: 150, easing: "swing", delay: 300 }
 			);
+			currPage.style.display = "inline";
+			logo.style.color = "white";
 		}
 
-		// Handle nav bar on click
-		nav.classList.toggle("nav-bar-active");
+		// Handle nav bar and on click
+		navBar.classList.toggle("nav-bar-active");
 		menu.classList.toggle("menu-active");
 		[...McButton.children].forEach((b) => {
 			b.classList.toggle("McButton-active");
 		});
+		nav.classList.toggle("nav-active");
+		
 	};
 	return (
 		<Router>
 			<nav className="nav">
 				<div className="nav-bar">
 					<div>
-						<h1>HelpCity</h1>
+						<Link onClick={()=>{}} to="/">
+							<h1 className="logo">HelpCity</h1>
+						</Link>
 					</div>
 					<div className="McButton-container">
 						<a onClick={handleClick} className="McButton" data="hamburger-menu">

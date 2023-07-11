@@ -1,5 +1,5 @@
 const Faq = () => {
-	return <div></div>;
+	return <div className="faq"></div>;
 };
 
 export default Faq;

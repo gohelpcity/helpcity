@@ -1,5 +1,5 @@
 const Openings = () => {
-	return <div></div>;
+	return <div className="openings"></div>;
 };
 
 export default Openings;

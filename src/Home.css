@@ -1,18 +1,51 @@
-video{
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 50rem;
-    object-fit: cover;
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: 0;
-    background-color: rgb(12, 11, 10);
-    filter: brightness(30%);
+video {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 50rem;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgb(12, 11, 10);
+	filter: brightness(30%);
 }
 
-h1{
+.home h1,
+.home button{
+	position: relative;
+	z-index: 1;
+}
+
+.home h1 {
+	padding-top: 2rem;
+	text-align: left;
+	font-size: 2.7rem;
+}
+
+.home button {
+	align-self: left;
+	margin-left: 2rem;
+	background: none;
+	color: white;
+	border: 0.1rem solid white;
+}
+
+.home button:hover {
+	background: white;
+	color: black;
+}
+
+.home .collection {
+	padding: 10rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+.home img {
     position: relative;
-    z-index: 1;
+	width: 60vw;
+	padding: 1rem 0;
 }

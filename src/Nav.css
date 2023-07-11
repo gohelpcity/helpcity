@@ -4,18 +4,14 @@ body {
 	font-size: 1.5rem;
 }
 
-h1 {
-	padding-left: 2rem;
-	font-size: 2.5rem;
-}
-
 .McButton-container,
 .McButton,
 .bar1,
 .bar2,
 .bar3,
 .nav-bar,
-.menu {
+.menu,
+h1 {
 	z-index: 1;
 }
 
@@ -56,18 +52,15 @@ h1 {
 }
 
 .nav-bar {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
 	justify-content: space-between;
-	background-color: #282c34;
 	color: white;
-	/* transition: background-color 0.6s ease-in; */
-	/* -webkit-transition: background-color 0.6s ease-in; Safari */
 }
 
 .nav-bar-active {
-	position: relative;
 	background-color: white;
 	color: #282c34;
 }
@@ -85,30 +78,29 @@ h1 {
 	background-color: white;
 	color: #282c34;
 	opacity: 0;
-	/* transition: all 0.6s ease-in; */
-	/* -webkit-transition: all 0.6s ease-in; Safari */
-	position: absolute;
 }
 
-.menu a {
+.menu a{
 	text-decoration: none;
 	color: #282c34;
-	transition: opacity 0.2s ease-in;
-	-webkit-transition: opacity 0.2s ease-in;
 }
 
 .menu a:hover {
 	opacity: 0.2;
 }
 
-.menu-active {
+.menu-active{
 	visibility: visible;
 	opacity: 1;
-	position: relative;
+	min-height: 100vh;
 }
 
 .menu li {
 	padding-left: 2rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+.logo{
+	color:white;
 }

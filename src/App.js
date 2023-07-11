@@ -1,6 +1,5 @@
 import './App.css';
 import Nav from './Nav';
-import Home from './Home';
 
 function App() {
   return (
@@ -8,7 +7,6 @@ function App() {
 			<header className="App-header">
 				<Nav className=""></Nav>
 			</header>
-			<Home></Home>
 		</div>
 	);
 }
