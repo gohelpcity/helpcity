@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/gohelpcity/helpcity/static/css/main.6ec5d523.css",
+    "main.js": "/gohelpcity/helpcity/static/js/main.617a9b4d.js",
+    "static/js/787.b6dd4127.chunk.js": "/gohelpcity/helpcity/static/js/787.b6dd4127.chunk.js",
+    "static/media/intro_video.mp4": "/gohelpcity/helpcity/static/media/intro_video.bbf1c751e4b17d6077b4.mp4",
+    "static/media/services.jpg": "/gohelpcity/helpcity/static/media/services.92eae6b3f36837260ccc.jpg",
+    "static/media/money.jpg": "/gohelpcity/helpcity/static/media/money.39dcfb0c0aa2bc584913.jpg",
+    "static/media/cleaning2.jpg": "/gohelpcity/helpcity/static/media/cleaning2.09b6902ceb240bab7fb6.jpg",
+    "static/media/cleaning1.jpg": "/gohelpcity/helpcity/static/media/cleaning1.2d081730068ce4faa5f6.jpg",
+    "index.html": "/gohelpcity/helpcity/index.html",
+    "main.6ec5d523.css.map": "/gohelpcity/helpcity/static/css/main.6ec5d523.css.map",
+    "main.617a9b4d.js.map": "/gohelpcity/helpcity/static/js/main.617a9b4d.js.map",
+    "787.b6dd4127.chunk.js.map": "/gohelpcity/helpcity/static/js/787.b6dd4127.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ec5d523.css",
+    "static/js/main.617a9b4d.js"
+  ]
+}
