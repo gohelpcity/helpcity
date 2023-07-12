@@ -91,7 +91,7 @@ const Home = () => {
 
 	return (
 		<div className="home">
-			<video autoPlay loop muted>
+			<video autoPlay loop muted playsInline>
 				<source src={video} type="video/mp4" />
 			</video>
 			<h1 className="animate__animated animate__pulse">
