@@ -1,8 +1,8 @@
-import './App.css';
-import Nav from './Nav';
+import "./App.css";
+import Nav from "./Nav";
 
 function App() {
-  return (
+	return (
 		<div className="App">
 			<header className="App-header">
 				<Nav className=""></Nav>

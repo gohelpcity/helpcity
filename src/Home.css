@@ -8,7 +8,6 @@ video {
 	top: 0;
 	left: 0;
 	z-index: 0;
-	background-color: rgb(12, 11, 10);
 	filter: brightness(30%);
 }
 
@@ -34,18 +33,39 @@ video {
 
 .home button:hover {
 	background: white;
-	color: black;
+	color: #282c34;
 }
 
 .home .collection {
 	padding: 10rem 5rem;
 	display: flex;
 	flex-direction: column;
-	gap: 6rem;
+	gap: 8rem;
 }
 
 .home img {
     position: relative;
-	width: 60vw;
+	width: 70vw;
 	padding: 1rem 0;
+	border-radius: 50%;
+}
+
+.services{
+	background: white;
+	color: #282c34;
+	padding: 2rem;
+}
+
+.services h1{
+	padding: 2rem 0;
+	margin: 0;
+	text-align: center;
+}
+
+.services img{
+	border-radius: 20%;
+}
+
+.invisible{
+	visibility: hidden;
 }

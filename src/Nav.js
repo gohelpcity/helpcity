@@ -1,7 +1,7 @@
 import "./Nav.css";
 import "./Nav";
 import "velocity-animate/velocity.ui.min.js";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Faq from "./Faq";
@@ -71,14 +71,14 @@ const Nav = () => {
 			b.classList.toggle("McButton-active");
 		});
 		nav.classList.toggle("nav-active");
-		
+
 	};
 	return (
 		<Router>
 			<nav className="nav">
 				<div className="nav-bar">
 					<div>
-						<Link onClick={()=>{}} to="/">
+						<Link onClick={() => {}} to="/">
 							<h1 className="logo">HelpCity</h1>
 						</Link>
 					</div>
@@ -92,7 +92,10 @@ const Nav = () => {
 				</div>
 				<ul className="menu">
 					<li>
-						<Link onClick={handleClick} to="/">
+						<Link
+							onClick={handleClick}
+							to="/"
+						>
 							Home
 						</Link>
 					</li>
