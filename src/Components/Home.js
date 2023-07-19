@@ -196,9 +196,13 @@ const Home = () => {
 						</p>
 					</swiper-slide>
 				</swiper-container>
-				<button>
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSdNSXACl69hEnN7W53ORlbXZVCoJw2Q9aSb6hHjQ4tDrKLuNg/viewform"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<h3>Request help!</h3>
-				</button>
+				</a>
 			</div>
 
 			<div className="volunteer">
@@ -211,9 +215,13 @@ const Home = () => {
 					low-income single mother or widow who requested our help. (People of
 					all skill levels welcome!)
 				</p>
-				<button>
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSeHbHJe8TLdMxIM5FulO3hLCeMwS5l8QL549UKfzzSDm_cPFQ/viewform"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<h3>We're interested!</h3>
-				</button>
+				</a>
 			</div>
 
 			<div className="subscribe">
