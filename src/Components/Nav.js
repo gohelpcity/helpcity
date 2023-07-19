@@ -1,7 +1,7 @@
 import "./Nav.css";
 import "./Nav";
 import "velocity-animate/velocity.ui.min.js";
-import { BrowserRouter as Router, Route, Link, Routes, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Faq from "./Faq";
@@ -25,6 +25,14 @@ const Nav = () => {
 				currPage = document.querySelector(`.${allPages[i]}`);
 				break;
 			}
+		}
+		const animateElement = [...document.querySelectorAll(".animate__animated")];
+		if(animateElement.length > 0){
+			animateElement.forEach(e =>{
+				e.classList.remove("animate__animated");
+				e.classList.remove("animate__flipInX");
+				e.classList.remove("animate__fadeInUp");
+			})
 		}
 
 		McButton.classList.toggle("active");
@@ -71,7 +79,6 @@ const Nav = () => {
 			b.classList.toggle("McButton-active");
 		});
 		nav.classList.toggle("nav-active");
-
 	};
 	return (
 		<Router>
@@ -91,32 +98,32 @@ const Nav = () => {
 					</div>
 				</div>
 				<ul className="menu">
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity">
 							Home
 						</Link>
 					</li>
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity/about">
 							About
 						</Link>
 					</li>
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity/faq">
 							FAQ
 						</Link>
 					</li>
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity/store">
 							Store
 						</Link>
 					</li>
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity/contact">
 							Contact
 						</Link>
 					</li>
-					<li>
+					<li className="menu-item">
 						<Link onClick={handleClick} to="/helpcity/openings">
 							Openings
 						</Link>

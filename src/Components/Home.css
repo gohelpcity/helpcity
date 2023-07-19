@@ -1,0 +1,160 @@
+.home .intro-vid {
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	height: 50rem;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	filter: brightness(30%);
+}
+
+.home h2 {
+	letter-spacing: 0.2rem;
+}
+
+.home h1,
+.home button {
+	position: relative;
+	z-index: 1;
+}
+
+.home h1 {
+	padding-top: 2rem;
+	text-align: left;
+	font-size: 2.7rem;
+}
+
+.home button {
+	align-self: left;
+	margin-left: 2rem;
+	background: none;
+	color: white;
+	border: 0.1rem solid white;
+}
+
+.home button:hover {
+	background: white;
+	color: #282c34;
+}
+
+.home .collection {
+	padding: 10rem 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+
+.home img {
+	position: relative;
+	width: 70vw;
+	padding: 1rem 0;
+	border-radius: 50%;
+}
+
+.home .separator {
+	width: 80vw;
+	height: 2px;
+	background-color: rgba(240, 248, 255, 0.377);
+	display: block;
+	margin: auto;
+}
+
+.home .services {
+	padding: 10rem 0;
+}
+
+.home .services h1 {
+	padding: 2rem;
+	margin: 0;
+	text-align: center;
+}
+
+.home .services img {
+	border-radius: 20%;
+	width: 60vw;
+}
+
+.home .services p {
+	padding: 2rem 4rem;
+	margin: 0;
+	line-height: 2.5rem;
+	letter-spacing: 0.1rem;
+}
+
+.home .services button,
+.home .volunteer button,
+.home .subscribe button {
+	display: block;
+	margin: auto;
+	padding: 0 1rem;
+}
+
+.home .services button {
+	background: white;
+	color: black;
+}
+
+.home .services button:hover {
+	filter: brightness(0.6);
+}
+
+.home .invisible {
+	visibility: hidden;
+}
+
+.home .volunteer {
+	padding: 60rem 5rem 10rem 5rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.945)),
+		url("../Images/volunteer.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.home .volunteer p,
+.home .subscribe p {
+	line-height: 3rem;
+	letter-spacing: 0.1rem;
+	padding: 2rem 0;
+	margin: 0;
+}
+
+.home .subscribe {
+	background: rgba(65, 65, 65, 0.637);
+	padding: 10rem 3rem;
+}
+
+.home .subscribe button {
+	border-radius: 0;
+}
+
+.home .subscribe button:hover {
+	filter: contrast(0.8)
+}
+
+.home footer {
+	padding: 5rem 2rem;
+}
+
+.home footer p{
+	padding: 1rem 0;
+	margin: 0;
+}
+
+.home .social-media{
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+
+}
+
+.home .social-media i:hover{
+	cursor: pointer;
+	animation: fadeIn;
+	animation-duration: 1s;
+}

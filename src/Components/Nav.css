@@ -4,6 +4,10 @@ body {
 	font-size: 1.5rem;
 }
 
+.nav .nav-active {
+	height: 100vh;
+}
+
 .McButton-container,
 .McButton,
 .bar1,
@@ -80,16 +84,17 @@ h1 {
 	opacity: 0;
 }
 
-.menu a{
+.menu a {
 	text-decoration: none;
 	color: #282c34;
 }
 
-.menu a:hover {
-	opacity: 0.2;
+.menu-item:hover {
+	animation: headShake;
+	animation-duration: 2s;
 }
 
-.menu-active{
+.menu-active {
 	visibility: visible;
 	opacity: 1;
 	min-height: 100vh;
@@ -101,6 +106,6 @@ h1 {
 	padding-bottom: 1rem;
 }
 
-.logo{
-	color:white;
+.logo {
+	color: white;
 }

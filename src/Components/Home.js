@@ -1,9 +1,14 @@
-import video from "./intro_video.mp4";
-import image1 from "./cleaning1.jpg";
-import image2 from "./cleaning2.jpg";
-import image3 from "./money.jpg";
+import intro from "../Videos/intro_video.mp4";
+import image1 from "../Images/cleaning1.jpg";
+import image2 from "../Images/cleaning2.jpg";
+import image3 from "../Images/money.jpg";
+import fix from "../Images/fix.jpg";
+import clean from "../Images/cleanIt.jpg";
+import troubleShoot from "../Images/troubleShoot.jpg";
+import build from "../Images/buildIt.jpg";
+import trim from "../Images/trimIt.jpg";
 import "./Home.css";
-import services from "./services.jpg";
+import services from "../Images/services.jpg";
 // Import Swiper React components
 // import { register } from "swiper/element/bundle";
 import { useEffect } from "react";
@@ -12,20 +17,6 @@ import { useEffect } from "react";
 import "swiper/css";
 
 const Home = () => {
-	// const swiperElRef = useRef(null);
-
-	// useEffect(() => {
-	// 	// listen for Swiper events using addEventListener
-	// 	swiperElRef.current.addEventListener("progress", (e) => {
-	// 		const [swiper, progress] = e.detail;
-	// 		// console.log(progress);
-	// 	});
-
-	// 	swiperElRef.current.addEventListener("slidechange", (e) => {
-	// 		// console.log("slide changed");
-	// 	});
-	// }, []);
-
 	useEffect(() => {
 		const title = document.querySelectorAll(".title");
 		let myObserver = new IntersectionObserver((entries, observer) => {
@@ -56,6 +47,22 @@ const Home = () => {
 			});
 		});
 		[...img].forEach((i) => {
+			myObserver.observe(i);
+		});
+
+		const service = document.querySelectorAll(".services");
+		myObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					// entry.target.src = "./profile_pic.png";
+					entry.target.classList.add("animate__animated");
+					entry.target.classList.add("animate__fadeInUp");
+					entry.target.classList.remove("invisible");
+					observer.unobserve(entry.target);
+				}
+			});
+		});
+		[...service].forEach((i) => {
 			myObserver.observe(i);
 		});
 
@@ -91,8 +98,8 @@ const Home = () => {
 
 	return (
 		<div className="home">
-			<video autoPlay loop muted playsInline>
-				<source src={video} type="video/mp4" />
+			<video autoPlay loop muted playsInline className="intro-vid">
+				<source src={intro} type="video/mp4" />
 			</video>
 			<h1 className="animate__animated animate__pulse">
 				Are you a Single Mom or Widow who needs help?{" "}
@@ -128,28 +135,103 @@ const Home = () => {
 					></img>
 				</div>
 			</div>
+
+			<div className="separator"></div>
+
 			<div className="services">
 				<h1>These are our services FREE to you</h1>
 				<swiper-container
 					// ref={swiperElRef}
 					slides-per-view="1"
-					speed="2"
 					loop="true"
 					css-mode="true"
 					navigation="true"
-					pagination="true"
+					// pagination="true"
 				>
 					<swiper-slide>
-						<img alt="..." src={services}></img>
+						<img alt="..." src={fix}></img>
+						<h2> Fix it.</h2>
+						<p>
+							Got a squeaky cabinet or a hole in the wall? We help with small
+							fixes in the house. We come with power tools!
+						</p>
 					</swiper-slide>
+
+					<swiper-slide>
+						<img alt="..." src={trim}></img>
+						<h2> Trim it.</h2>
+						<p>
+							We help with basic landscaping such as weeding, trimming, raking,
+							and mowing!
+						</p>
+					</swiper-slide>
+
+					<swiper-slide>
+						<img alt="..." src={build}></img>
+						<h2> Build it.</h2>
+						<p>Need help assembling furniture? Leave it to us!</p>
+					</swiper-slide>
+
 					<swiper-slide>
 						<img alt="..." src={services}></img>
+						<h2> Move it.</h2>
+						<p>Having trouble moving bigger items? Let us do it!</p>
 					</swiper-slide>
+
 					<swiper-slide>
-						<img alt="..." src={services}></img>
+						<img alt="..." src={clean}></img>
+						<h2> Clean it.</h2>
+						<p>
+							Super behind on cleaning and organization? Our very own interior
+							organizer, Annabelle, can help you optimize!
+						</p>
+					</swiper-slide>
+
+					<swiper-slide>
+						<img alt="..." src={troubleShoot}></img>
+						<h2> Trouble shoot it.</h2>
+						<p>
+							Confused on how to set up the internet or update your computer?
+							Our own in-house engineers, Ago & Jeffrey, have your back!
+						</p>
 					</swiper-slide>
 				</swiper-container>
+				<button>
+					<h3>Request help!</h3>
+				</button>
 			</div>
+
+			<div className="volunteer">
+				<h2>
+					Do you have a group interested in serving moms & widows in your area?
+				</h2>
+				<p>
+					We will walk your group through the simple steps. Then you’ll be all
+					set to volunteer for 2 hours on a Saturday morning in the home of a
+					low-income single mother or widow who requested our help. (People of
+					all skill levels welcome!)
+				</p>
+				<button>
+					<h3>We're interested!</h3>
+				</button>
+			</div>
+
+			<div className="subscribe">
+				<h2>Stay up to date on HelpCity!</h2>
+				<p>Sign up with your email address to receive news and updates.</p>
+				<button>
+					<h3>Subscribe</h3>
+				</button>
+			</div>
+
+			<footer>
+				<p>HelpCity | Seattle, WA (425) 202 - 5280</p>
+				<p>© HelpCity 2023 | Privacy Policy | Terms of Service</p>
+				<div className="social-media">
+					<i className="fa-brands fa-square-facebook fa-2xl"></i>
+					<i className="fa-solid fa-envelope fa-2xl"></i>
+				</div>
+			</footer>
 		</div>
 	);
 };
