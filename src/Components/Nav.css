@@ -92,6 +92,7 @@ h1 {
 .menu-item:hover {
 	animation: headShake;
 	animation-duration: 2s;
+	opacity: 0.5;
 }
 
 .menu-active {
