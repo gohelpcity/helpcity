@@ -181,9 +181,3 @@
 	animation: fadeIn;
 	animation-duration: 1s;
 }
-
-@media only screen and (min-width: 350px) {
-	.home h1{
-		padding-top: 10rem;
-	}
-}
