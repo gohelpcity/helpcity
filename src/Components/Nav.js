@@ -77,7 +77,6 @@ const Nav = () => {
 		if (animateElement.length > 0) {
 			animateElement.forEach((e) => {
 				e.classList.remove("animate__animated");
-				e.classList.remove("animate__delay-1s");
 				if (e.classList.contains("animate__flipInX")) {
 					e.classList.remove("animate__flipInX");
 				}

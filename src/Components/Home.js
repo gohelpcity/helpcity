@@ -24,7 +24,6 @@ const Home = () => {
 				if (entry.isIntersecting) {
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__fadeInRight");
-					entry.target.classList.add("animate__delay-1s");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
@@ -40,7 +39,6 @@ const Home = () => {
 				if (entry.isIntersecting) {
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__flipInX");
-					entry.target.classList.add("animate__delay-1s");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
@@ -56,7 +54,6 @@ const Home = () => {
 				if (entry.isIntersecting) {
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__fadeInUp");
-					entry.target.classList.add("animate__delay-1s");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
