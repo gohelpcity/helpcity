@@ -1,5 +1,6 @@
 import "./App.css";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function App() {
 	return (
@@ -7,6 +8,8 @@ function App() {
 			<header className="App-header">
 				<Nav className=""></Nav>
 			</header>
+			<div className="separator"></div>
+			<Footer />
 		</div>
 	);
 }

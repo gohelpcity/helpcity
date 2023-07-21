@@ -9,7 +9,6 @@ import build from "../Images/buildIt.jpg";
 import trim from "../Images/trimIt.jpg";
 import "./Home.css";
 import services from "../Images/services.jpg";
-import Footer from "./Footer";
 // Import Swiper React components
 // import { register } from "swiper/element/bundle";
 import { useEffect } from "react";
@@ -204,7 +203,7 @@ const Home = () => {
 					<h3>Subscribe</h3>
 				</button>
 			</div>
-			<Footer />
+			
 
 		</div>
 	);

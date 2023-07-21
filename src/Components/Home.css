@@ -23,7 +23,7 @@
 
 .home h1 {
 	margin: 0;
-	padding: 5rem 2rem 2rem 2rem;
+	padding: 30rem 2rem 2rem 2rem;
 	text-align: left;
 	font-size: 2.7rem;
 }
@@ -46,7 +46,7 @@
 }
 
 .home .collection {
-	padding: 10rem 5rem;
+	padding: 15rem 5rem 5rem 5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 8rem;
@@ -59,16 +59,8 @@
 	border-radius: 50%;
 }
 
-.home .separator {
-	width: 80vw;
-	height: 2px;
-	background-color: rgba(240, 248, 255, 0.377);
-	display: block;
-	margin: auto;
-}
-
 .home .services {
-	padding: 10rem 0;
+	padding: 5rem 0;
 }
 
 .home .services h1 {

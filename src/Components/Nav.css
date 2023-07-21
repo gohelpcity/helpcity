@@ -74,6 +74,7 @@ h1 {
 }
 
 .menu {
+	position: absolute;
 	list-style: none;
 	text-align: left;
 	padding: 0;
@@ -99,6 +100,7 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 	min-height: 100vh;
+	position: relative;
 }
 
 .menu li {
