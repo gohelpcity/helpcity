@@ -9,6 +9,7 @@ import build from "../Images/buildIt.jpg";
 import trim from "../Images/trimIt.jpg";
 import "./Home.css";
 import services from "../Images/services.jpg";
+import Footer from "./Footer";
 // Import Swiper React components
 // import { register } from "swiper/element/bundle";
 import { useEffect } from "react";
@@ -203,15 +204,8 @@ const Home = () => {
 					<h3>Subscribe</h3>
 				</button>
 			</div>
+			<Footer />
 
-			<footer>
-				<p>HelpCity | Seattle, WA (425) 202 - 5280</p>
-				<p>© HelpCity 2023 | Privacy Policy | Terms of Service</p>
-				<div className="social-media">
-					<i className="fa-brands fa-square-facebook fa-2xl"></i>
-					<i className="fa-solid fa-envelope fa-2xl"></i>
-				</div>
-			</footer>
 		</div>
 	);
 };

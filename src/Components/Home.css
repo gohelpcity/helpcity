@@ -158,26 +158,3 @@
 .home .subscribe button:hover {
 	filter: contrast(0.8);
 }
-
-.home footer {
-	padding: 5rem 2rem;
-}
-
-.home footer p {
-	padding: 1rem 0;
-	margin: 0;
-}
-
-.home .social-media {
-	padding-top: 2rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 2rem;
-}
-
-.home .social-media i:hover {
-	cursor: pointer;
-	animation: fadeIn;
-	animation-duration: 1s;
-}
