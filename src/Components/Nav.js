@@ -26,14 +26,6 @@ const Nav = () => {
 				break;
 			}
 		}
-		const animateElement = [...document.querySelectorAll(".animate__animated")];
-		if(animateElement.length > 0){
-			animateElement.forEach(e =>{
-				e.classList.remove("animate__animated");
-				e.classList.remove("animate__flipInX");
-				e.classList.remove("animate__fadeInUp");
-			})
-		}
 
 		McButton.classList.toggle("active");
 
@@ -79,6 +71,26 @@ const Nav = () => {
 			b.classList.toggle("McButton-active");
 		});
 		nav.classList.toggle("nav-active");
+
+		// remove animate classes after first render
+		const animateElement = [...document.querySelectorAll(".animate__animated")];
+		if (animateElement.length > 0) {
+			animateElement.forEach((e) => {
+				e.classList.remove("animate__animated");
+				e.classList.remove("animate__slow");
+				if (e.classList.contains("animate__flipInX")) {
+					e.classList.remove("animate__flipInX");
+				}
+
+				if (e.classList.contains("animate__fadeInUp")) {
+					e.classList.remove("animate__fadeInUp");
+				}
+
+				if (e.classList.contains("animate__fadeInRight")) {
+					e.classList.remove("animate__fadeInRight");
+				}
+			});
+		}
 	};
 	return (
 		<Router>

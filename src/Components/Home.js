@@ -22,9 +22,9 @@ const Home = () => {
 		let myObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					// entry.target.src = "./profile_pic.png";
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__fadeInRight");
+					entry.target.classList.add("animate__slow");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
@@ -38,9 +38,9 @@ const Home = () => {
 		myObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					// entry.target.src = "./profile_pic.png";
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__flipInX");
+					entry.target.classList.add("animate__slow");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
@@ -54,9 +54,9 @@ const Home = () => {
 		myObserver = new IntersectionObserver((entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					// entry.target.src = "./profile_pic.png";
 					entry.target.classList.add("animate__animated");
 					entry.target.classList.add("animate__fadeInUp");
+					entry.target.classList.add("animate__slow");
 					entry.target.classList.remove("invisible");
 					observer.unobserve(entry.target);
 				}
@@ -66,34 +66,9 @@ const Home = () => {
 			myObserver.observe(i);
 		});
 
-		// myObserver = new IntersectionObserver((entries, observer) => {
-		// 	entries.forEach((entry) => {
-		// 		if (entry.isIntersecting) {
-		// 			entry.target.classList.add("fade-in-left");
-		// 			entry.target.classList.remove("invisible");
-		// 			observer.unobserve(entry.target);
-		// 		}
-		// 	});
-		// });
-		// myObserver.observe(document.querySelector(".intro"));
-
-		// myObserver = new IntersectionObserver((entries, observer) => {
-		// 	entries.forEach((entry) => {
-		// 		if (entry.isIntersecting) {
-		// 			entry.target.classList.add("zoom-in");
-		// 			entry.target.classList.remove("invisible");
-		// 			observer.unobserve(entry.target);
-		// 		}
-		// 	});
-		// });
-
-		// document.querySelectorAll(".skills").forEach((skill) => {
-		// 	myObserver.observe(skill);
-		// });
-
-		// document.querySelectorAll(".list-skillset").forEach((skill) => {
-		// 	myObserver.observe(skill);
-		// });
+		return () => {
+			
+		};
 	}, []);
 
 	return (
