@@ -6,6 +6,17 @@
 	color: rgba(255, 255, 255, 0.452);
 }
 
+.about p {
+	letter-spacing: 0.15rem;
+	font-size: 1.2rem;
+}
+
+.about h2,
+.about p {
+	padding: 1rem 1rem 1rem 2rem;
+	margin: 0;
+}
+
 .about .underline {
 	width: 8rem;
 	height: 2px;
@@ -14,49 +25,38 @@
 	margin-top: -2rem;
 }
 
-.about .mission, .about .vision {
+.about .container{
+	display: flex;
+	flex-direction: column;
+	row-gap: 10rem;
+	padding: 10rem 0;
+}
+
+.about .container .item{
 	text-align: left;
 	overflow: hidden;
-	padding-top: 8rem;
 }
 
-.about .vision{
-	padding-bottom: 5rem;
-}
-
-.about .space{
-	height: 5rem;
-}
-
-.about p {
-	letter-spacing: 0.15rem;
-	font-size: 1.2rem;
-}
-
-.about h2, .about p{
-	padding-left: 2rem;
-}
-
-.about img{
-	padding: 2rem 0 0 0;
+.about img {
+	padding-top: 2rem;
 	width: 100vw;
-	object-fit:fill;
+	object-fit: fill;
 }
 
-.about .story{
+.about .story {
 	text-align: right;
 	background-color: rgba(68, 68, 68, 0.322);
 	padding: 5rem 0;
 	margin: 0 1rem;
 }
 
-.about .story h2{
+.about .story h2 {
 	padding-right: 2rem;
 }
 
-.about .story p{
+.about .story p, .about .team p {
 	margin: 0;
-	font-size: 1.5rem;
 	padding: 2rem;
 	line-height: 3rem;
+	font-size: 1.5rem;
 }

@@ -18,6 +18,7 @@ const Nav = () => {
 		const navBar = document.querySelector(".nav-bar");
 		const nav = document.querySelector(".nav");
 		const logo = document.querySelector(".logo");
+		const footer = document.querySelector(".footer");
 		const allPages = ["home", "about", "contact", "openings", "store", "faq"];
 		let currPage;
 		for (let i = 0; i < allPages.length; i++) {
@@ -46,6 +47,7 @@ const Nav = () => {
 			);
 			currPage.style.display = "none";
 			logo.style.color = "#282c34";
+			footer.style.display = "none";
 
 		} else {
 			McButton.velocity(
@@ -62,6 +64,7 @@ const Nav = () => {
 			);
 			currPage.style.display = "inline";
 			logo.style.color = "white";
+			footer.style.display = "block";
 		}
 
 		// Handle nav bar and on click

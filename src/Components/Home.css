@@ -46,7 +46,7 @@
 }
 
 .home .collection {
-	padding: 15rem 5rem 5rem 5rem;
+	padding: 15rem 5rem 10rem 5rem;
 	display: flex;
 	flex-direction: column;
 	gap: 8rem;
@@ -60,11 +60,11 @@
 }
 
 .home .services {
-	padding: 5rem 0;
+	padding: 10rem 0;
 }
 
 .home .services h1 {
-	padding: 2rem;
+	padding: 0 2rem 2rem 2rem;
 	margin: 0;
 	text-align: center;
 }
@@ -136,6 +136,9 @@
 	background: white;
 }
 
+.home .container{
+	padding: 10rem 0;
+}
 .home .subscribe {
 	background: rgba(65, 65, 65, 0.637);
 	padding: 10rem 3rem;
@@ -149,4 +152,8 @@
 
 .home .subscribe button:hover {
 	filter: contrast(0.8);
+}
+
+.home .space{
+	height: 5rem;
 }

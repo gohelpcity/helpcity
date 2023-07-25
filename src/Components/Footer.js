@@ -1,7 +1,7 @@
 import "./Footer.css";
 const Footer = () => {
 	return (
-		<footer>
+		<footer className="footer">
 			<p>HelpCity | Seattle, WA (425) 202 - 5280</p>
 			<p>© HelpCity 2023 | Privacy Policy | Terms of Service</p>
 			<div className="social-media">

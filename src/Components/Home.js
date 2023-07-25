@@ -63,9 +63,7 @@ const Home = () => {
 			myObserver.observe(i);
 		});
 
-		return () => {
-			
-		};
+		return () => {};
 	}, []);
 
 	return (
@@ -78,7 +76,7 @@ const Home = () => {
 			</h1>
 			<button>We're here for you</button>
 			<div className="collection">
-				<div className="container">
+				<div >
 					<h2 className="title invisible">Tougher jobs around the house?</h2>
 					<img
 						className="image invisible"
@@ -87,7 +85,7 @@ const Home = () => {
 					></img>
 				</div>
 
-				<div className="container">
+				<div >
 					<h2 className="title invisible">
 						Desperately needing to catch up on chores?
 					</h2>
@@ -98,7 +96,7 @@ const Home = () => {
 					></img>
 				</div>
 
-				<div className="container ">
+				<div >
 					<h2 className="title invisible">Unable to afford hired help?</h2>
 					<img
 						className="image invisible"
@@ -195,16 +193,15 @@ const Home = () => {
 					<h3>We're interested!</h3>
 				</a>
 			</div>
-
-			<div className="subscribe">
-				<h2>Stay up to date on HelpCity!</h2>
-				<p>Sign up with your email address to receive news and updates.</p>
-				<button>
-					<h3>Subscribe</h3>
-				</button>
+			<div className="container">
+				<div className="subscribe">
+					<h2>Stay up to date on HelpCity!</h2>
+					<p>Sign up with your email address to receive news and updates.</p>
+					<button>
+						<h3>Subscribe</h3>
+					</button>
+				</div>
 			</div>
-			
-
 		</div>
 	);
 };
