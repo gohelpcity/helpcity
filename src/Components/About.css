@@ -1,3 +1,8 @@
+:root {
+	--primary-text-color: white;
+	--secondary-text-color: rgb(252, 201, 198);
+}
+
 .about .title {
 	font-size: xx-large;
 	text-align: left;
@@ -6,9 +11,14 @@
 	color: rgba(255, 255, 255, 0.452);
 }
 
+.about h2 {
+	color: var(--secondary-text-color);
+}
+
 .about p {
 	letter-spacing: 0.15rem;
 	font-size: 1.2rem;
+	color: var(--primary-text-color);
 }
 
 .about h2,
@@ -25,14 +35,14 @@
 	margin-top: -2rem;
 }
 
-.about .container{
+.about .container {
 	display: flex;
 	flex-direction: column;
 	row-gap: 10rem;
 	padding: 10rem 0;
 }
 
-.about .container .item{
+.about .container .item {
 	text-align: left;
 	overflow: hidden;
 }
@@ -54,9 +64,38 @@
 	padding-right: 2rem;
 }
 
-.about .story p, .about .team p {
+.about .story p,
+.about .team p,
+.about a {
 	margin: 0;
 	padding: 2rem;
 	line-height: 3rem;
 	font-size: 1.5rem;
+}
+
+.about a {
+	color: transparent;
+	background-image: linear-gradient(90deg, rgb(233, 120, 116) 50%, var(--secondary-text-color) 50%);
+	background-position: 100%;
+	background-size: 200% 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+
+	transition: background-position 1.5s ease;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	font-size: 2rem;
+}
+
+.about a:hover {
+	background-position:0;
+}
+
+@keyframes link_animate {
+	from {
+		color: var(--secondary-text-color);
+	}
+	to {
+		color: rgb(247, 119, 119);
+	}
 }

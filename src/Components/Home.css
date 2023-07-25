@@ -1,3 +1,8 @@
+:root {
+	--primary-text-color: white;
+	--secondary-text-color: rgb(252, 201, 198);
+}
+
 .home .intro-vid {
 	padding: 0;
 	margin: 0;
@@ -9,6 +14,10 @@
 	left: 0;
 	z-index: 0;
 	filter: brightness(30%);
+}
+
+.home h2{
+	color: var(--secondary-text-color);
 }
 
 .home h2 {
@@ -29,19 +38,19 @@
 }
 
 .home a {
-	color: white;
+	color: var(--primary-text-color);
 }
 
 .home button {
 	align-self: left;
 	margin-left: 2rem;
 	background: none;
-	color: white;
-	border: 0.1rem solid white;
+	color: var(--primary-text-color);
+	border: 0.1rem solid var(--primary-text-color);
 }
 
 .home button:hover {
-	background: white;
+	background: var(--primary-text-color);
 	color: black;
 }
 
@@ -90,7 +99,7 @@
 
 .home .services a {
 	color: black;
-	background: white;
+	background: var(--primary-text-color);
 	width: 45vw;
 	padding: 0.2rem 0;
 	border-radius: 0.7rem;
@@ -123,8 +132,8 @@
 }
 
 .home .volunteer a {
-	border: 0.1rem solid white;
-	color: white;
+	border: 0.1rem solid var(--primary-text-color);
+	color: var(--primary-text-color);
 	border-radius: 0.7rem;
 	width: 55vw;
 	padding: 0.2rem 0;
@@ -133,7 +142,7 @@
 
 .home .volunteer a:hover {
 	color: black;
-	background: white;
+	background: var(--primary-text-color);
 }
 
 .home .container{

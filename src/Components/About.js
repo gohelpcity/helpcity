@@ -76,7 +76,7 @@ const About = () => {
 			</div>
 
 			<div className="separator"></div>
-			
+
 			<div className="container">
 				<section className="team">
 					<h2>HelpCity’s Partners & Programs</h2>
@@ -87,6 +87,11 @@ const About = () => {
 						develop emotionally intelligent skills for life and healthier
 						relationships!
 					</p>
+					<a href="https://www.mykairos.life/"
+					target="_blank"
+					rel="noreferrer">
+						www.mykairos.life
+					</a>
 				</section>
 			</div>
 		</div>
