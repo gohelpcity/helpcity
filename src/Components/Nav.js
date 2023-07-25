@@ -99,7 +99,7 @@ const Nav = () => {
 			<nav className="nav">
 				<div className="nav-bar">
 					<div>
-						<Link onClick={() => {}} to="/">
+						<Link onClick={() => {}} to="/helpcity">
 							<h1 className="logo">HelpCity</h1>
 						</Link>
 					</div>
@@ -113,43 +113,43 @@ const Nav = () => {
 				</div>
 				<ul className="menu">
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/">
+						<Link onClick={handleClick} to="/helpcity">
 							Home
 						</Link>
 					</li>
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/about">
+						<Link onClick={handleClick} to="/helpcity/about">
 							About
 						</Link>
 					</li>
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/faq">
+						<Link onClick={handleClick} to="/helpcity/faq">
 							FAQ
 						</Link>
 					</li>
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/store">
+						<Link onClick={handleClick} to="/helpcity/store">
 							Store
 						</Link>
 					</li>
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/contact">
+						<Link onClick={handleClick} to="/helpcity/contact">
 							Contact
 						</Link>
 					</li>
 					<li className="menu-item">
-						<Link onClick={handleClick} to="/openings">
+						<Link onClick={handleClick} to="/helpcity/openings">
 							Openings
 						</Link>
 					</li>
 				</ul>
 				<Routes>
-					<Route path="/" exact element={<Home />}></Route>
-					<Route path="/about" element={<About />}></Route>
-					<Route path="/faq" element={<Faq />}></Route>
-					<Route path="/store" element={<Store />}></Route>
-					<Route path="/contact" element={<Contact />}></Route>
-					<Route path="/openings" element={<Openings />}></Route>
+					<Route path="/helpcity" exact element={<Home />}></Route>
+					<Route path="/helpcity/about" element={<About />}></Route>
+					<Route path="/helpcity/faq" element={<Faq />}></Route>
+					<Route path="/helpcity/store" element={<Store />}></Route>
+					<Route path="/helpcity/contact" element={<Contact />}></Route>
+					<Route path="/helpcity/openings" element={<Openings />}></Route>
 					{/* <Route path="*" element={404 PAGE}></Route> */}
 				</Routes>
 			</nav>
