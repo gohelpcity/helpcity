@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/helpcity/static/css/main.0ea5dfd1.css",
-    "main.js": "/helpcity/static/js/main.89e67fc0.js",
+    "main.css": "/helpcity/static/css/main.f64097b1.css",
+    "main.js": "/helpcity/static/js/main.a07f28b1.js",
     "static/js/787.b6dd4127.chunk.js": "/helpcity/static/js/787.b6dd4127.chunk.js",
     "static/media/intro_video.mp4": "/helpcity/static/media/intro_video.bbf1c751e4b17d6077b4.mp4",
     "static/media/services.jpg": "/helpcity/static/media/services.92eae6b3f36837260ccc.jpg",
     "static/media/fix.jpg": "/helpcity/static/media/fix.d8593459482b75d513ef.jpg",
-    "static/media/groupPic.jpg": "/helpcity/static/media/groupPic.e838c38764090274f4e2.jpg",
     "static/media/mission_a.jpg": "/helpcity/static/media/mission_a.715f5652de08b5866642.jpg",
     "static/media/money.jpg": "/helpcity/static/media/money.39dcfb0c0aa2bc584913.jpg",
     "static/media/trimIt.jpg": "/helpcity/static/media/trimIt.9f89c032dc7a9ceea29d.jpg",
+    "static/media/groupPic.jpg": "/helpcity/static/media/groupPic.2062575e79e74f74d18f.jpg",
     "static/media/volunteer.jpg": "/helpcity/static/media/volunteer.3a7feabb84ee8d8d505e.jpg",
     "static/media/buildIt.jpg": "/helpcity/static/media/buildIt.aeb9cab752b90fefcb7e.jpg",
     "static/media/cleaning2.jpg": "/helpcity/static/media/cleaning2.09b6902ceb240bab7fb6.jpg",
@@ -19,12 +19,12 @@
     "static/media/kairos.png": "/helpcity/static/media/kairos.fe536d329175a659152a.png",
     "static/media/cleanIt.jpg": "/helpcity/static/media/cleanIt.5685b5f7e93b35cba3da.jpg",
     "index.html": "/helpcity/index.html",
-    "main.0ea5dfd1.css.map": "/helpcity/static/css/main.0ea5dfd1.css.map",
-    "main.89e67fc0.js.map": "/helpcity/static/js/main.89e67fc0.js.map",
+    "main.f64097b1.css.map": "/helpcity/static/css/main.f64097b1.css.map",
+    "main.a07f28b1.js.map": "/helpcity/static/js/main.a07f28b1.js.map",
     "787.b6dd4127.chunk.js.map": "/helpcity/static/js/787.b6dd4127.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ea5dfd1.css",
-    "static/js/main.89e67fc0.js"
+    "static/css/main.f64097b1.css",
+    "static/js/main.a07f28b1.js"
   ]
 }
