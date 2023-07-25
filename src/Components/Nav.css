@@ -13,7 +13,6 @@ body {
 .bar1,
 .bar2,
 .bar3,
-.nav-bar,
 .menu,
 h1 {
 	z-index: 1;
@@ -56,15 +55,20 @@ h1 {
 }
 
 .nav-bar {
-	position: relative;
+	background-color: black;
+	position: sticky;
+	top: 0;
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
 	justify-content: space-between;
 	color: white;
+	z-index: 99;
 }
 
 .nav-bar-active {
+	position: relative;
+	top: 0;
 	background-color: white;
 	color: #282c34;
 }

@@ -15,7 +15,8 @@ import Contact from "./Contact";
 import Openings from "./Openings";
 
 const Nav = () => {
-	const handleClick = () => {
+	const handleClick = (e) => {
+		// e.preventDefault();
 		const McButton = document.querySelector(".McButton");
 		const McBar1 = document.querySelector(".bar1");
 		const McBar3 = document.querySelector(".bar3");
@@ -50,10 +51,10 @@ const Nav = () => {
 				{ transform: ["rotateZ(135deg)", "rotateZ(0deg)"] },
 				{ duration: 300, delay: 150, easing: [100, 20] }
 			);
-			currPage.style.display = "none";
+			currPage.style.visibility = "hidden";
 			logo.style.color = "#282c34";
 			footer.style.display = "none";
-
+			window.scrollTo(0, 0);
 		} else {
 			McButton.velocity(
 				{ transform: ["rotateZ(0deg)", "rotateZ(135deg)"] },
@@ -67,7 +68,7 @@ const Nav = () => {
 				{ top: "0%" },
 				{ duration: 150, easing: "swing", delay: 300 }
 			);
-			currPage.style.display = "inline";
+			currPage.style.visibility = "visible";
 			logo.style.color = "white";
 			footer.style.display = "block";
 		}
