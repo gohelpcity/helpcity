@@ -1,7 +1,12 @@
 import "./Nav.css";
 import "./Nav";
 import "velocity-animate/velocity.ui.min.js";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import {
+	BrowserRouter as HashRouter,
+	Route,
+	Link,
+	Routes,
+} from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import Faq from "./Faq";
@@ -95,7 +100,7 @@ const Nav = () => {
 		}
 	};
 	return (
-		<Router>
+		<HashRouter>
 			<nav className="nav">
 				<div className="nav-bar">
 					<div>
@@ -153,7 +158,7 @@ const Nav = () => {
 					{/* <Route path="*" element={404 PAGE}></Route> */}
 				</Routes>
 			</nav>
-		</Router>
+		</HashRouter>
 	);
 };
 
