@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/helpcity/static/css/main.0ea5dfd1.css",
-    "main.js": "/helpcity/static/js/main.89e67fc0.js",
+    "main.js": "/helpcity/static/js/main.c9e00772.js",
     "static/js/787.b6dd4127.chunk.js": "/helpcity/static/js/787.b6dd4127.chunk.js",
     "static/media/intro_video.mp4": "/helpcity/static/media/intro_video.bbf1c751e4b17d6077b4.mp4",
     "static/media/services.jpg": "/helpcity/static/media/services.92eae6b3f36837260ccc.jpg",
@@ -20,11 +20,11 @@
     "static/media/cleanIt.jpg": "/helpcity/static/media/cleanIt.5685b5f7e93b35cba3da.jpg",
     "index.html": "/helpcity/index.html",
     "main.0ea5dfd1.css.map": "/helpcity/static/css/main.0ea5dfd1.css.map",
-    "main.89e67fc0.js.map": "/helpcity/static/js/main.89e67fc0.js.map",
+    "main.c9e00772.js.map": "/helpcity/static/js/main.c9e00772.js.map",
     "787.b6dd4127.chunk.js.map": "/helpcity/static/js/787.b6dd4127.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ea5dfd1.css",
-    "static/js/main.89e67fc0.js"
+    "static/js/main.c9e00772.js"
   ]
 }
